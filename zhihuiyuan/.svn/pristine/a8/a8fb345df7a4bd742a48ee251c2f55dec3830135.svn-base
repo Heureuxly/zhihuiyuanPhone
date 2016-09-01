@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="__CSS__/index.css">
+<script src="__JS__/jquery.js"></script>
+<script src="__JS__/index.js"></script>
+<script src="__JS__/dtree.js"></script>
+
+<script type="text/javascript">
+
+	var ThinkPHP={
+		'ROOT':'__ROOT__',
+		'IMG':'__PUBLIC__/{:MODULE_NAME/img}',
+		'FACE':'__PUBLIC__/{:MODULE_NAME/face}',
+		'MODULE':'__MODULE__',
+		'UPLOADIFY':'__UPLOADIFY__',
+		'IMAGEURL':'{:U("File/image")}',
+		'FACEURL':'{:U("File/face")}',
+		'BIGFACE':'{:session("user_auth")["face"]->big}',
+		'INDEX':'{:U("Index/index")}',
+
+	}
+	</script>
+	<script src="__JS__/dtree.js"></script>
+	<style>
+		.ua li { width:600px; height: 50px; border-bottom: 1px solid #000000;}
+		.ua  { width:600px; border:1px solid #000000 ; border-bottom: none; margin: 0 auto;list-style: none; padding: 0px;}
+		.ua div { float:left; height: 50px; line-height: 50px; text-align: center;}
+		.user{width: 100px; border-right: 1px solid #000000;}
+		.password{width:399px;border-right: 1px solid #000000;}
+		.state{ width: 99px; }
+	</style>
+</head>
+<body>
+	<div id="header"></div>
+
+<div id="contain" class="clear">
+	<p class="contain_nav">后台管理： 管理首页</p>
+	<div class="contain_side">
+		<script src="__JS__/left.js"></script>
+	</div>
+	<div class="contain_main">
+	<ul class="ua">
+		<li class="title">
+			<div class="user">账户</div>
+			<div class="password">密码</div>
+			<div class="state">会员等级</div>
+		</li>
+		<foreach name="us" item="v">
+		<li>
+			<fe>
+			<div class="user">{$v.uname}</div>
+			<div class="password">{$v.password}</div>
+			<div class="state">{$v.state}</div>
+		</li>
+		</foreach>
+		
+	</ul>
+	</div>
+	
+</body>
+</html>

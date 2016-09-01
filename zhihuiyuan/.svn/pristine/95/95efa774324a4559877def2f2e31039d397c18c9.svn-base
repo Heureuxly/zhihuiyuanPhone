@@ -1,0 +1,14 @@
+<?php 
+namespace Admin\Controller;
+	
+use Think\Contrller;	
+class NewsController extends Controller{
+		
+		public function index(){
+		
+			$this->display();	
+		}
+		
+	}
+	
+

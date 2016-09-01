@@ -1,0 +1,62 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="/zhihuiyuan/Public/Admin/css/index.css">
+<script src="/zhihuiyuan/Public/Admin/js/jquery.js"></script>
+<script src="/zhihuiyuan/Public/Admin/js/index.js"></script>
+<script src="/zhihuiyuan/Public/Admin/js/dtree.js"></script>
+
+<script type="text/javascript">
+
+	var ThinkPHP={
+		'ROOT':'/zhihuiyuan',
+		'IMG':'/zhihuiyuan/Public/<?php echo MODULE_NAME/img;?>',
+		'FACE':'/zhihuiyuan/Public/<?php echo MODULE_NAME/face;?>',
+		'MODULE':'/zhihuiyuan/Admin',
+		'UPLOADIFY':'/zhihuiyuan/Public/Admin/uploadify',
+		'IMAGEURL':'<?php echo U("File/image");?>',
+		'FACEURL':'<?php echo U("File/face");?>',
+		'BIGFACE':'<?php echo session("user_auth")["face"]->big;?>',
+		'INDEX':'<?php echo U("Index/index");?>',
+
+	}
+	</script>
+	<script src="/zhihuiyuan/Public/Admin/js/dtree.js"></script>
+	<style>
+		.ua li { width:600px; height: 50px; border-bottom: 1px solid #000000;}
+		.ua  { width:600px; border:1px solid #000000 ; border-bottom: none; margin: 0 auto;list-style: none; padding: 0px;}
+		.ua div { float:left; height: 50px; line-height: 50px; text-align: center;}
+		.user{width: 100px; border-right: 1px solid #000000;}
+		.password{width:399px;border-right: 1px solid #000000;}
+		.state{ width: 99px; }
+	</style>
+</head>
+<body>
+	<div id="header"></div>
+
+<div id="contain" class="clear">
+	<p class="contain_nav">后台管理： 管理首页</p>
+	<div class="contain_side">
+		<script src="/zhihuiyuan/Public/Admin/js/left.js"></script>
+	</div>
+	<div class="contain_main">
+	<ul class="ua">
+		<li class="title">
+			<div class="user">账户</div>
+			<div class="password">密码</div>
+			<div class="state">会员等级</div>
+		</li>
+		<?php if(is_array($us)): foreach($us as $key=>$v): ?><li>
+			
+			<div class="user"><?php echo ($v["uname"]); ?></div>
+			<div class="password"><?php echo ($v["password"]); ?></div>
+			<div class="state"><?php echo ($v["state"]); ?></div>
+		</li><?php endforeach; endif; ?>
+		
+	</ul>
+	</div>
+	
+</body>
+</html>
