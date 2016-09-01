@@ -1,2 +1,0 @@
-# zhihuiyuanPhone
-zhihuiyuan_mobile
