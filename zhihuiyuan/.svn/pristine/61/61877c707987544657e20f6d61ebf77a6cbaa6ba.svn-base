@@ -1,0 +1,26 @@
+<?php
+namespace Admin\Controller;
+use Think\Controller;
+class IndexController extends Controller {
+    public function index(){
+       //判断是否登录
+	/*if(empty($_SESSION['adminuser'])){
+            $this->redirect("Admin/Login/index");
+            die();
+	   }
+       else{
+            this->redirect("nologin");
+            die();
+       }
+        //查询管理员信息
+        $this->rec = D("admin_users")->where(array("uname" => $_SESSION['adminuser']['uname']))->select();
+        foreach( $this->rec as $this->user){
+
+        }
+        //查询管理员数量
+        $count = mysql_query("select count(*) from si_admin_users");
+        $this->result = mysql_fetch_assoc($count);*/
+        $this->display();
+       }
+    
+}

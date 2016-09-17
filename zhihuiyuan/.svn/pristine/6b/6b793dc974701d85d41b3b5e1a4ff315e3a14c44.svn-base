@@ -1,0 +1,22 @@
+<?php
+namespace Admin\Controller;
+use Think\Controller;
+class TeacherController extends Controller {
+    public 	function index(){
+		$js=M("teacher")->select();
+		$this->assign("js",$js);
+		$db=M("users");
+		$result = $db->query('SELECT * FROM si_teacher n, si_users i WHERE n.id = i.tid ');
+        $this->assign("result",$result);
+		$this->display();
+		
+	}
+	function teacher(){
+
+		$this->display();
+		
+		
+	}
+
+
+}

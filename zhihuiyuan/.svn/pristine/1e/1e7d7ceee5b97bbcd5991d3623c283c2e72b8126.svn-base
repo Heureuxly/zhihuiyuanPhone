@@ -1,0 +1,98 @@
+<?php
+namespace Admin\Controller;
+use Think\Controller;
+class TypeController extends Controller {
+    public function index(){
+     //两化融合分类使用函数，生成包含option的字符串，并传给模板
+    $str=getTypen();
+    $this->assign('typeStr',$str);
+       
+        $this->display();
+    }
+
+    /*//分类的列表
+  function oper(){
+
+
+    $str=getTypenTr();
+    $this->assign('typeStr',$str);
+    $this->display();
+  }*/
+  //修改分类
+  function add(){
+    //使用函数，生成包含option的字符串，并传给模板
+    $str=getTypen();
+    $this->assign('typeStr',$str);
+    $this->display();
+  }
+
+  //添加两化融合分类,表单数据处理
+  function save(){
+    $ob=M('36serves');
+    $re=$ob->data($_POST)->add();
+    if($re){
+      $this->success("添加成功",U("Type/add"),2);
+    }else{
+      $this->error("添加失败",U("Type/add"),3);
+    }
+  }
+
+
+   /* //分类页默认显示 
+    public function type(){
+      //默认分类列表显示
+      //二级分类
+      $resuleTow = M('36serves')->where('nid = 0')->select();
+      //三级分类
+      $resuleSthree = M('36serves')->where('nid = 1')->select();
+      //四级分类
+      $resuleFour = M('36serves')->where('nid = 9')->select();
+
+
+      $this->assign('resuleFour',$resuleFour);
+      $this->assign('resuleSthree',$resuleSthree);
+      $this->assign('resuleTow',$resuleTow);
+
+
+      $this->display('News/index');
+
+    }
+
+
+    public function addtype(){
+      //二级分类列表显示
+
+      if($_POST['content1'] == 1){
+        $resuleTow = M('36serves')->where('nid = 0')->select();
+        foreach ($resuleTow as $k => $v) {
+        echo '<option class="tow" value="'.$v['id'].'">'.$v['36name'].'</option>';
+          
+        };
+        //echo json_encode($resuleTow);
+      }elseif($_POST['content2']){
+        echo $_POST['content2'];
+      }
+
+
+      if($_POST['content1'] == 2){
+         $resuleTow = M('services')->where('nid = 0')->select();
+         foreach ($resuleTow as $k => $v) {
+          echo '<option class="tow" value="'.$v['id'].'">'.$v['sername'].'</option>' ;
+        }
+      }
+      
+
+
+
+
+
+    }
+    
+*/
+
+
+
+
+
+
+}

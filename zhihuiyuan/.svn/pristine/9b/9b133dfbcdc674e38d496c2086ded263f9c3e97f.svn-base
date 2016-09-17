@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="__CSS__/index.css">
+<script src="__JS__/jquery.js"></script>
+<script src="__JS__/index.js"></script>
+<script src="__JS__/dtree.js"></script>
+
+<script type="text/javascript">
+
+	var ThinkPHP={
+		'ROOT':'__ROOT__',
+		'IMG':'__PUBLIC__/{:MODULE_NAME/img}',
+		'FACE':'__PUBLIC__/{:MODULE_NAME/face}',
+		'MODULE':'__MODULE__',
+		'UPLOADIFY':'__UPLOADIFY__',
+		'IMAGEURL':'{:U("File/image")}',
+		'FACEURL':'{:U("File/face")}',
+		'BIGFACE':'{:session("user_auth")["face"]->big}',
+		'INDEX':'{:U("Index/index")}',
+
+	}
+	</script>
+	<script src="__JS__/dtree.js"></script>
+	<style>
+		.ua li { width:600px; height: 50px; border-bottom: 1px solid #000000;}
+		.ua  { width:600px; border:1px solid #000000 ; border-bottom: none; margin: 0 auto;list-style: none; padding: 0px;}
+		.ua div { float:left; height: 50px; line-height: 50px; text-align: center;}
+		.name{width: 100px; border-right: 1px solid #000000;}
+		.title{width:199px;border-right: 1px solid #000000;}
+		.content{ width: 299px; }
+	</style>
+</head>
+<body>
+	<div id="header"></div>
+
+<div id="contain" class="clear">
+	<p class="contain_nav">后台管理： 管理首页</p>
+	<div class="contain_side">
+		<script src="__JS__/left.js"></script>
+	</div>
+	<div class="contain_main">
+	<!-- <ul class="ua">
+		<li>
+			<div class="name">姓名</div>
+			<div class="title">标题</div>
+			<div class="content">内容</div>
+		</li>
+		<foreach name="us" item="v">
+		<li>
+			<div class="name">{$v.name}</div>
+			<div class="title">{$v.title}</div>
+			<div class="content">{$v.content}</div>
+		</li>
+		</foreach>
+		
+	</ul> -->
+	<div class="teacher_list">
+				<p>姓　　名<input type="text" value={$v.name}></p>
+				<p>擅长领域<input type="text" value="{$v.field}">{$v.field}</p>
+				<p>技术特长<input type="text" value="213">{$v.technology}</p>
+				<p>个人简介<input type="text" value="{$v.introduction}">{$v.introduction}</p>
+				<p>单位名称<input type="text" value="{$v.company}">{$v.company}</p>
+				<p>
+					省<input class="city" type="text" value="">{$v.prov}
+					市<input class="city" type="text" value="">{$v.city}
+					区<input class="city" type="text" value="">{$v.dist}
+				</p>
+				<p><input class="submit" type="submit" value="保存"></p>
+		</div>
+	
+	</div>
+	
+</body>
+</html>

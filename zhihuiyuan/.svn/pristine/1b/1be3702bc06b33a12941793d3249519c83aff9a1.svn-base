@@ -1,0 +1,4 @@
+<!-- main区 -->
+<div id="main">
+	<block name="main"></block>
+</div>
