@@ -13,3 +13,105 @@ INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
 INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
 
+[ 2016-09-18T10:29:52+08:00 ] 127.0.0.1 /zhihuiyuan/zhihuiyuanPhone/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T10:29:59+08:00 ] 127.0.0.1 /zhihuiyuan/zhihuiyuanPhone/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T10:32:30+08:00 ] 127.0.0.1 /zhihuiyuan/zhihuiyuanPhone/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T10:34:38+08:00 ] 127.0.0.1 /zhihuiyuan/zhihuiyuanPhone/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T10:34:39+08:00 ] 127.0.0.1 /zhihuiyuan/zhihuiyuanPhone/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015600s ]
+
+[ 2016-09-18T10:34:40+08:00 ] 127.0.0.1 /zhihuiyuan/zhihuiyuanPhone/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T10:34:49+08:00 ] 127.0.0.1 /zhihuiyuan/zhihuiyuanPhone/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T10:34:55+08:00 ] 127.0.0.1 /zhihuiyuan/zhihuiyuanPhone/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T10:35:01+08:00 ] 127.0.0.1 /zhihuiyuan/zhihuiyuanPhone/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T10:35:06+08:00 ] 127.0.0.1 /zhihuiyuan/zhihuiyuanPhone/Map/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T10:35:06+08:00 ] 127.0.0.1 /zhihuiyuan/zhihuiyuanPhone/Public/Home/css/swiper.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-09-18T10:35:06+08:00 ] 127.0.0.1 /zhihuiyuan/zhihuiyuanPhone/Public/Home/js/swiper.jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-09-18T10:35:12+08:00 ] 127.0.0.1 /zhihuiyuan/zhihuiyuanPhone/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-18T10:35:13+08:00 ] 127.0.0.1 /zhihuiyuan/zhihuiyuanPhone/Glod/index/id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T10:36:11+08:00 ] 127.0.0.1 /zhihuiyuan/zhihuiyuanPhone/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T10:36:13+08:00 ] 127.0.0.1 /zhihuiyuan/zhihuiyuanPhone/Login/information
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T10:37:22+08:00 ] 127.0.0.1 /zhihuiyuan/zhihuiyuanPhone/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-18T10:38:59+08:00 ] 127.0.0.1 /zhihuiyuan/zhihuiyuanPhone/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T10:40:09+08:00 ] 127.0.0.1 /zhihuiyuan/zhihuiyuanPhone/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-18T10:40:52+08:00 ] 127.0.0.1 /zhihuiyuan/zhihuiyuanPhone/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+

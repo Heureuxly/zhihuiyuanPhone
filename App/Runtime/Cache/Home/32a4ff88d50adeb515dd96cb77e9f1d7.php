@@ -69,12 +69,19 @@
 				<span>地图定位</span>
 			</li>
 			</a>
-			<a href="/zhihuiyuan/zhihuiyuanPhone/Login/index">
+			<?php if(empty($session)): ?><a href="/zhihuiyuan/zhihuiyuanPhone/Login/index">
 			<li id="imgid3">
 				<i class="fa fa-th-large fa-2x"></i>
 				<span>登陆注册</span>
 			</li>
-			</a>
+		</a>	
+		<?php else: ?>
+		<a href="/zhihuiyuan/zhihuiyuanPhone/Login/index">
+			<li id="imgid3">
+				<i class="fa fa-th-large fa-2x"></i>
+				<span>个人中心</span>
+			</li>
+		</a><?php endif; ?>
 		</ul>
 	</aside>
 </body>

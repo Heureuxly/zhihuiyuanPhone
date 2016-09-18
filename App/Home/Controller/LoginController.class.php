@@ -9,6 +9,10 @@ use Think\Upload;
 header('content-type:text/html;charset=utf-8');
 class LoginController extends Controller {
     public function index(){
+        //判断SESSION
+        if(!empty($_SESSION)){
+            $this->assign('session',$_SESSION);
+        }
 
 		
         $this->display();
@@ -17,14 +21,20 @@ class LoginController extends Controller {
 
 
     public function information(){
-
+//判断SESSION
+        if(!empty($_SESSION)){
+            $this->assign('session',$_SESSION);
+        }
 
 
             $this->display();
     	
     }
     public function regmobile(){
-
+//判断SESSION
+        if(!empty($_SESSION)){
+            $this->assign('session',$_SESSION);
+        }
 
     	$this->display();
     }

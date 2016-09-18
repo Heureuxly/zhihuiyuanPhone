@@ -7,6 +7,11 @@ use Think\Page;
 header('content-type:text/html;charset=utf-8');
 class GlodController extends Controller {
     public function index(){
+    	//判断SESSION
+    	if(!empty($_SESSION)){
+    		$this->assign('session',$_SESSION);
+    	}
+    	
     	//下拉列表和首页连接接受的值
 		$tit = M('datas')->where('id < 13 && id>1')->select();
 		if($_GET['nid']!=''&&$_GET['id']=''){
