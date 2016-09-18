@@ -6,30 +6,30 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
 	<title>登录</title>
 
-	<link rel="stylesheet" href="/zhihuiyuan(1)/Public/Home/css/public.css">
-	<link rel="stylesheet" href="/zhihuiyuan(1)/Public/Home/css/login.css">
-	<link rel="stylesheet" href="/zhihuiyuan(1)/Public/Home/css/font-awesome.css">
+	<link rel="stylesheet" href="/zhihuiyuan/zhihuiyuanPhone/Public/Home/css/public.css">
+	<link rel="stylesheet" href="/zhihuiyuan/zhihuiyuanPhone/Public/Home/css/login.css">
+	<link rel="stylesheet" href="/zhihuiyuan/zhihuiyuanPhone/Public/Home/css/font-awesome.css">
 
-	<script src="/zhihuiyuan(1)/Public/Home/js/jquery.js" type="text/javascript"></script>
-	<script src="/zhihuiyuan(1)/Public/Home/js/index.js" type="text/javascript"></script>
+	<script src="/zhihuiyuan/zhihuiyuanPhone/Public/Home/js/jquery.js" type="text/javascript"></script>
+	<script src="/zhihuiyuan/zhihuiyuanPhone/Public/Home/js/index.js" type="text/javascript"></script>
 </head>
 <body>
 	<header>
 		<div class="button">
-			<img src="/zhihuiyuan(1)/Public/Home/img/button.png" alt="">
+			<img src="/zhihuiyuan/zhihuiyuanPhone/Public/Home/img/button.png" alt="">
 		</div>
 		<nav class="menu">
 			<ul class="menu_1">
 			<?php echo ($content2); ?>
 			</ul>
 		</nav>
-		<a href="/zhihuiyuan(1)/index.html">
+		<a href="/zhihuiyuan/zhihuiyuanPhone/index.html">
 		    <div class="top">
 			<div class="logo">
-				<img src="/zhihuiyuan(1)/Public/Home/img/logo.png" alt="">
+				<img src="/zhihuiyuan/zhihuiyuanPhone/Public/Home/img/logo.png" alt="">
 			</div>
 			<div class="word">
-				<img src="/zhihuiyuan(1)/Public/Home/img/word.png" alt="">
+				<img src="/zhihuiyuan/zhihuiyuanPhone/Public/Home/img/word.png" alt="">
 			</div>
 		    </div>
 	    	</a>
@@ -39,16 +39,16 @@
 	<main>
 		<div class="title">
 			<h1>登录界面</h1>
-			<span class="information"><a href="/zhihuiyuan(1)/Login/information">完善信息</a></span>
+			<span class="information"><a href="/zhihuiyuan/zhihuiyuanPhone/Login/information">完善信息</a></span>
 		</div>
 		<div class="login">
-			<form action="/zhihuiyuan(1)/Login/login" method="post">
-				<div class="inputdv"><span><img src="/zhihuiyuan(1)/Public/Home/img/login_star.png" alt=""></span>
+			<form action="/zhihuiyuan/zhihuiyuanPhone/Login/login" method="post">
+				<div class="inputdv"><span><img src="/zhihuiyuan/zhihuiyuanPhone/Public/Home/img/login_star.png" alt=""></span>
 				<input class="name" type="text" placeholder="姓名/电话" name="user"></div>
-				<div class="inputdv"><span><img src="/zhihuiyuan(1)/Public/Home/img/login_star.png" alt=""></span>
+				<div class="inputdv"><span><img src="/zhihuiyuan/zhihuiyuanPhone/Public/Home/img/login_star.png" alt=""></span>
 				<input class="password" type="password" placeholder="密码：" name="password"></div>
 				<input class="submit" type="submit" value="确认登陆">
-				<a href="/zhihuiyuan(1)/Login/regmobile" class="registered">注册</a>
+				<a href="/zhihuiyuan/zhihuiyuanPhone/Login/regmobile" class="registered">注册</a>
 			</form>
 		</div>
 	</main>
@@ -63,13 +63,13 @@
 				<span>联系客服</span>
 			</li>
 			</a>
-			<a href="/zhihuiyuan(1)/Map/index">
+			<a href="/zhihuiyuan/zhihuiyuanPhone/Map/index">
 			<li id="imgid2">
 				<i class="fa fa-map-marker fa-2x"></i>
 				<span>地图定位</span>
 			</li>
 			</a>
-			<a href="/zhihuiyuan(1)/Login/index">
+			<a href="/zhihuiyuan/zhihuiyuanPhone/Login/index">
 			<li id="imgid3">
 				<i class="fa fa-th-large fa-2x"></i>
 				<span>登陆注册</span>

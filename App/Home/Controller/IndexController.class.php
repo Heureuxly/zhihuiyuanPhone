@@ -7,6 +7,9 @@ use Think\Page;
 header('content-type:text/html;charset=utf-8');
 class IndexController extends HomeController {
     public function index(){
+    		if(!empty($_SESSION)){
+    		$this->assign('session',$_SESSION);
+    	}
     	
 			//显示文章内容 
  		$content = M('datas')->where('id >1 && id <7')->select();
