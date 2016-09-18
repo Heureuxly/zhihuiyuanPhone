@@ -124,7 +124,7 @@
 		<?php else: ?>
 		<a href="/zhihuiyuan/zhihuiyuanPhone/Login/index">
 			<li id="imgid3">
-				<i class="fa fa-th-large fa-2x"></i>
+				<i class="fa fa-male fa-2x"></i>
 				<span>个人中心</span>
 			</li>
 		</a><?php endif; ?>

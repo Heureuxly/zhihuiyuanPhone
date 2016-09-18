@@ -12,7 +12,7 @@ function getTypeStr(){
 		foreach($typeTwoArr as $v2){
 		$content.="
 		<dd>
-                <a href=\"/zhihuiyuan/Company/commitList/nid/{$v2['id']}\">{$v2['sername']}</a>
+                <a href=\"/zhihuiyuan/zhihuiyuanPhone/Company/commitList/nid/{$v2['id']}\">{$v2['sername']}</a>
                 <span>&gt;</span>
                 <ul class=\"suspend\">
 		";
@@ -21,7 +21,7 @@ function getTypeStr(){
 			foreach($typeThreeArr as $v3){
 			$content.="
                     <li>
-                        <a href=\"/zhihuiyuan/Company/commitList/id/{$v3['id']}/nid/{$v3['nid']}\">{$v3['sername']}</a>
+                        <a href=\"/zhihuiyuan/zhihuiyuanPhone/Company/commitList/id/{$v3['id']}/nid/{$v3['nid']}\">{$v3['sername']}</a>
                     </li>
 			";
 			}
@@ -48,7 +48,7 @@ function getTypeStr2(){
 			//获取第二级
 			$typeTwoArr=M("36serves")->where("nid={$v1['id']}")->select();
 			foreach($typeTwoArr as $v2){
-					$content.="	<li class=\"menu-a menu_2\"><a href=\"/zhihuiyuan(1)/Glod/index/id/{$v2['id']}\">{$v2['36name']}</a></li>
+					$content.="	<li class=\"menu-a menu_2\"><a href=\"/zhihuiyuan/zhihuiyuanPhone/Glod/index/id/{$v2['id']}\">{$v2['36name']}</a></li>
 						";						
 			}
 		$content.="	</ul>

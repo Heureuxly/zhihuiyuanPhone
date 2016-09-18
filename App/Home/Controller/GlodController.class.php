@@ -49,7 +49,7 @@ class GlodController extends Controller {
 			$matter = htmlspecialchars_decode($str) ;
 	        }
 
-		$tit1 = M('datas')->where('id'= $id)->select();
+		$tit1 = M('datas')->where('id = '.$id)->select();
 		$tit2 = M('datas')->where('id = 2')->find();
 
 		$tit2['content'] = htmlspecialchars_decode($tit2['content']);
