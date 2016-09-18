@@ -31,25 +31,25 @@ class GlodController extends Controller {
 			$matter = htmlspecialchars_decode($str) ;
 		}
 		// /////////////////////////
-		// if($_GET['nid']!=''){
-	 //    	$newsCount1 = M('info')->where('id = '.$_GET['nid'])->find();
-	 //    	$str1 = $newsCount1['infoname'];
-	 //    	$str = $newsCount1['content'];
-		// 	$matter = htmlspecialchars_decode($str) ;
-	 //        }
-	 //    //首页左侧列表
-		// if($_GET['id']!=''){
-	 //    	$newsCount1 = M('datas')->where('id = '.$_GET['id'])->find();
-	 //    	$str1 = $newsCount1['dataname'];
-	 //        }
+		if($_GET['nid']!=''){
+	    	$newsCount1 = M('info')->where('id = '.$_GET['nid'])->find();
+	    	$str1 = $newsCount1['infoname'];
+	    	$str = $newsCount1['content'];
+			$matter = htmlspecialchars_decode($str) ;
+	        }
+	    //首页左侧列表
+		if($_GET['id']!=''){
+	    	$newsCount1 = M('datas')->where('id = '.$_GET['id'])->find();
+	    	$str1 = $newsCount1['dataname'];
+	        }
 	   
-	 //    	if($_GET['id']!=''){
-	 //    	$newsCount = M('datas')->where('id = '.$_GET['id'])->find();
-	 //    	$str = $newsCount['content'];
-		// 	$matter = htmlspecialchars_decode($str) ;
-	 //        }
+	    	if($_GET['id']!=''){
+	    	$newsCount = M('datas')->where('id = '.$_GET['id'])->find();
+	    	$str = $newsCount['content'];
+			$matter = htmlspecialchars_decode($str) ;
+	        }
 
-		// $tit1 = M('datas')->where('id'= $id)->select();
+		$tit1 = M('datas')->where('id'= $id)->select();
 		$tit2 = M('datas')->where('id = 2')->find();
 
 		$tit2['content'] = htmlspecialchars_decode($tit2['content']);

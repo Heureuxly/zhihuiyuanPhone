@@ -10,9 +10,7 @@ class IndexController extends HomeController {
     		if(!empty($_SESSION)){
     		$this->assign('session',$_SESSION);
     	}
-    //	print_r($_SESSION);
-    	print_r($_COOKIE);
-    	
+    
 			//显示文章内容 
  		$content = M('datas')->where('id >1 && id <7')->select();
  		$str = $content['content'];

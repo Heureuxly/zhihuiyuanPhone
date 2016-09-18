@@ -23,7 +23,7 @@
 			<?php echo ($content2); ?>
 			</ul>
 		</nav>
-		<a href="/zhihuiyuan/zhihuiyuanPhone/index.html">
+			<a href="/zhihuiyuan/zhihuiyuanPhone/index.html">
 		    <div class="top">
 			<div class="logo">
 				<img src="/zhihuiyuan/zhihuiyuanPhone/Public/Home/img/logo.png" alt="">

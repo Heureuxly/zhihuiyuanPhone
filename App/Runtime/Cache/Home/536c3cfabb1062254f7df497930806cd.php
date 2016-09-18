@@ -6,34 +6,34 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
 
     <title>注册页面</title>
-    <link rel="stylesheet" href="/zhihuiyuan(1)/Public/Home/css/public.css">
-    <link rel="stylesheet" href="/zhihuiyuan(1)/Public/Home/css/regm.css">
-    <link rel="stylesheet" href="/zhihuiyuan(1)/Public/Home/css/font-awesome.css">
+    <link rel="stylesheet" href="/zhihuiyuan/zhihuiyuanPhone/Public/Home/css/public.css">
+    <link rel="stylesheet" href="/zhihuiyuan/zhihuiyuanPhone/Public/Home/css/regm.css">
+    <link rel="stylesheet" href="/zhihuiyuan/zhihuiyuanPhone/Public/Home/css/font-awesome.css">
 
-    <script src="/zhihuiyuan(1)/Public/Home/js/jquery.js"></script>
-    <script src="/zhihuiyuan(1)/Public/Home/js/check.js"></script>
-    <script src="/zhihuiyuan(1)/Public/Home/js/index.js"></script>
-    <script src="/zhihuiyuan(1)/Public/Home/js/reg.js"></script>
+    <script src="/zhihuiyuan/zhihuiyuanPhone/Public/Home/js/jquery.js"></script>
+    <script src="/zhihuiyuan/zhihuiyuanPhone/Public/Home/js/check.js"></script>
+    <script src="/zhihuiyuan/zhihuiyuanPhone/Public/Home/js/index.js"></script>
+    <script src="/zhihuiyuan/zhihuiyuanPhone/Public/Home/js/reg.js"></script>
 
 </head>
 <body>
 <!-- header start -->
    <header>
         <div class="button">
-            <img src="/zhihuiyuan(1)/Public/Home/img/button.png" alt="">
+            <img src="/zhihuiyuan/zhihuiyuanPhone/Public/Home/img/button.png" alt="">
         </div>
         <nav class="menu">
             <ul class="menu_1">
             <?php echo ($content2); ?>
             </ul>
         </nav>
-        <a href="/zhihuiyuan(1)/index.html">
+        <a href="/zhihuiyuan/zhihuiyuanPhone/index.html">
             <div class="top">
             <div class="logo">
-                <img src="/zhihuiyuan(1)/Public/Home/img/logo.png" alt="">
+                <img src="/zhihuiyuan/zhihuiyuanPhone/Public/Home/img/logo.png" alt="">
             </div>
             <div class="word">
-                <img src="/zhihuiyuan(1)/Public/Home/img/word.png" alt="">
+                <img src="/zhihuiyuan/zhihuiyuanPhone/Public/Home/img/word.png" alt="">
             </div>
             </div>
             </a>
@@ -50,7 +50,7 @@
             <h1>注册界面</h1>
         </div>
 
-		<form action="/zhihuiyuan(1)/Login/zhuce" onsubmit="return checksubmit('reg')" method="post" enctype="multipart/form-data">
+		<form action="/zhihuiyuan/zhihuiyuanPhone/Login/zhuce" onsubmit="return checksubmit('reg')" method="post" enctype="multipart/form-data">
             <ul>
                 <li>
                     <label id="head_P">
@@ -65,7 +65,7 @@
                    <span class="error error_user" style="margin-left:-132px;top:3.65rem;">姓名不能出现数字、英文、标点符号、特殊字符！</span>
                 </li>
                 <li>
-                    <span class="dvstar"><img src="/zhihuiyuan(1)/Public/Home/img/login_star.png" alt=""></span>    
+                    <span class="dvstar"><img src="/zhihuiyuan/zhihuiyuanPhone/Public/Home/img/login_star.png" alt=""></span>    
                     <select name="sex" id="">
                         <option value="男">男</option>
                         <option value="女">女</option>
@@ -118,18 +118,25 @@
                 <span>联系客服</span>
             </li>
             </a>
-            <a href="/zhihuiyuan(1)/Map/index">
+            <a href="/zhihuiyuan/zhihuiyuanPhone/Map/index">
             <li id="imgid2">
                 <i class="fa fa-map-marker fa-2x"></i>
                 <span>地图定位</span>
             </li>
             </a>
-            <a href="/zhihuiyuan(1)/Login/index">
+           <?php if(empty($session)): ?><a href="/zhihuiyuan/zhihuiyuanPhone/Login/index">
             <li id="imgid3">
                 <i class="fa fa-th-large fa-2x"></i>
                 <span>登陆注册</span>
             </li>
-            </a>
+        </a>    
+        <?php else: ?>
+        <a href="/zhihuiyuan/zhihuiyuanPhone/Login/index">
+            <li id="imgid3">
+                <i class="fa fa-th-large fa-2x"></i>
+                <span>个人中心</span>
+            </li>
+        </a><?php endif; ?>
         </ul>
     </aside>
 <!--aside end-->
