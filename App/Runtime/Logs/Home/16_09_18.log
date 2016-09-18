@@ -537,3 +537,48 @@ INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
 INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
 
+[ 2016-09-18T11:46:48+08:00 ] 127.0.0.1 /zhihuiyuan/zhihuiyuanPhone/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T11:46:50+08:00 ] 127.0.0.1 /zhihuiyuan/zhihuiyuanPhone/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T11:46:52+08:00 ] 127.0.0.1 /zhihuiyuan/zhihuiyuanPhone/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-18T11:46:53+08:00 ] 127.0.0.1 /zhihuiyuan/zhihuiyuanPhone/Glod/index/id/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-18T11:46:57+08:00 ] 127.0.0.1 /zhihuiyuan/zhihuiyuanPhone/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T11:46:59+08:00 ] 127.0.0.1 /zhihuiyuan/zhihuiyuanPhone/Glod/index/id/6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-18T11:47:03+08:00 ] 127.0.0.1 /zhihuiyuan/zhihuiyuanPhone/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-18T11:47:07+08:00 ] 127.0.0.1 /zhihuiyuan/zhihuiyuanPhone/Glod/index/id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-18T11:47:10+08:00 ] 127.0.0.1 /zhihuiyuan/zhihuiyuanPhone/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
