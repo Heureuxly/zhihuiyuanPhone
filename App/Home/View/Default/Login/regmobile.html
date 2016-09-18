@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
 
     <title>注册页面</title>
     <link rel="stylesheet" href="__CSS__/public.css">
@@ -50,25 +50,23 @@
             <h1>注册界面</h1>
         </div>
 
-		<form action="post" onsubmit="return checksubmit('reg')">
+		<form action="__ROOT__/Login/zhuce" onsubmit="return checksubmit('reg')" method="post" enctype="multipart/form-data">
             <ul>
                 <li>
-                    <label>
-                        <input sytle="display:none" class="file_pic" type="file">
-                        <div id="head_pic" class="head_pic">上传头像</div>
+                    <label id="head_P">
+                        <input sytle="display:none" class="file_pic" type="file" name="img">
+                        <div class="head_pic" id="head_pic">上传头像</div>
                     </label>
                     <span style="margin-left:-66px;top:4.7rem;" class="error error_file error_center_a">请上传图片格式的文件！</span>
                 </li>
-
-                <li>
-                    <span class="dvstar"><img src="__IMG__/login_star.png" alt=""></span>
-                   <input class="text" type="text" name="user" value="姓名：请输入真实姓名"> 
+                 <li>
+                   <input style="margin-top: .8125rem;" class="text" type="text" name="user" value="姓名：请输入真实姓名"> 
                    <span class="info info_user"></span>
                    <span class="error error_user" style="margin-left:-132px;top:3.65rem;">姓名不能出现数字、英文、标点符号、特殊字符！</span>
                 </li>
                 <li>
                     <span class="dvstar"><img src="__IMG__/login_star.png" alt=""></span>    
-                    <select name="" id="">
+                    <select name="sex" id="">
                         <option value="男">男</option>
                         <option value="女">女</option>
                     </select>
@@ -80,7 +78,7 @@
                     <span style="margin-left:-84px;top:3.65rem;" class="error error_phone">手机号格式错误，请重新输入！</span>
                 </li>
                 <li>
-                    <input class="text" type="text" name="email" value="邮箱：请输入您的邮箱">
+                    <input class="text" type="text" name="email" value="邮箱：">
                     <span style="margin-left:-84px;top:3.65rem;" class="error error_email">邮箱格式错误，请重新输入！</span>
                 </li>
                 <li>

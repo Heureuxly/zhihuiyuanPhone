@@ -2,19 +2,17 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
-
-
+	 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
 	<title>地图定位</title>
-	<link rel="stylesheet" href="/zhihui/Public/Home/css/public.css">
-	<link rel="stylesheet" href="/zhihui/Public/Home/css/map.css">
-	<link rel="stylesheet" href="/zhihui/Public/Home/css/font-awesome.css">
-	<link rel="stylesheet" href="/zhihui/Public/Home/css/swiper.min.css">
+	<link rel="stylesheet" href="/zhihuiyuan(1)/Public/Home/css/public.css">
+	<link rel="stylesheet" href="/zhihuiyuan(1)/Public/Home/css/map.css">
+	<link rel="stylesheet" href="/zhihuiyuan(1)/Public/Home/css/font-awesome.css">
+	<link rel="stylesheet" href="/zhihuiyuan(1)/Public/Home/css/swiper.min.css">
 
-	<script src="/zhihui/Public/Home/js/jquery.js" type="text/javascript"></script>
-	<script src="/zhihui/Public/Home/js/index.js" type="text/javascript"></script>
-	<script src="/zhihui/Public/Home/js/swiper.jquery.min.js" type="text/javascript"></script>
+	<script src="/zhihuiyuan(1)/Public/Home/js/jquery.js" type="text/javascript"></script>
+	<script src="/zhihuiyuan(1)/Public/Home/js/index.js" type="text/javascript"></script>
+	<script src="/zhihuiyuan(1)/Public/Home/js/swiper.jquery.min.js" type="text/javascript"></script>
 
 </head>
 <body>
@@ -23,20 +21,20 @@
 
 	<header>
 		<div class="button">
-			<img src="/zhihui/Public/Home/img/button.png" alt="">
+			<img src="/zhihuiyuan(1)/Public/Home/img/button.png" alt="">
 		</div>
 		<nav class="menu">
 			<ul class="menu_1">
 			<?php echo ($content2); ?>
 			</ul>
 		</nav>
-		<a href="/zhihui/index.html">
+		<a href="/zhihuiyuan(1)/index.html">
 		    <div class="top">
 			<div class="logo">
-				<img src="/zhihui/Public/Home/img/logo.png" alt="">
+				<img src="/zhihuiyuan(1)/Public/Home/img/logo.png" alt="">
 			</div>
 			<div class="word">
-				<img src="/zhihui/Public/Home/img/word.png" alt="">
+				<img src="/zhihuiyuan(1)/Public/Home/img/word.png" alt="">
 			</div>
 		    </div>
 	    	</a>
@@ -48,15 +46,15 @@
 	</div>
 
 	<div class="map">
-		<script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=d3954d76df90df19b9d8f2b75af533d0"></script>
+		<script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=d3954d76df90df19b9d8f2b75af533d0"></script> 
      	<div class="main_right">
         	<div id="container">
-
+				
          	</div>
       	</div>
 	</div>
-
-	<div class="swiper-container" style="position:relative;z-index:888;">
+	
+	<div class="swiper-container">
 	    <div class="swiper-wrapper">
 			<div class="map_word swiper-slide">
 				<p>智慧源战略发展集群运营总部</p>
@@ -81,6 +79,13 @@
 			</div>
 		</div>
 	</div>
+
+	<script>        
+  		var mySwiper = new Swiper ('.swiper-container', {
+    		loop: true,
+   	 	})   
+
+  	</script>
 
 	</main>
 
@@ -113,8 +118,9 @@
 
 	<script type="text/javascript">
 
-	$(function(){
-		//map
+	var mySwiper = new Swiper('.swiper-container');
+
+	//map
 		var longitude = ['116.4390208346','118.1238306042','114.1027663199'];
 	    var latitude = ['40.0282927031','24.5167755474','22.5487548369'];
 	    var city = ['<h1 style="font-size:1.6em;">智慧方略管理顾问有限公司</h1>','<h1 style="font-size:1.6em;">厦门智慧源战略发展集群运营分部</h1>','<h1 style="font-size:1.6em;">深圳智慧源战略发展集群运营分部</h1>',];
@@ -142,56 +148,51 @@
 	        infowindow.open(map,new AMap.LngLat(nowLongitude,nowLatitude));   //默认打开提示信息
     	}
     	fn();
-    	fn33();
-    	function fn33(){
-			var startX = 0;
-			var iX = 0;
-			var objX = 0;
-			var iW = document.documentElement.clientWidth;
+    	$(function(){
+    		
+			$('.swiper-wrapper').bind('touchstart', fnStart);
+			$('.swiper-wrapper').bind('touchend', fnEnd);
+			   
+		
+			var img = $('.swiper-wrapper').eq(0);
+			var iStartTouchStartX = 0;
+			var iStartTouchEndX = 0; 
+			var iStartX = 0; 
+			var index = 0;
 
-			$('.swiper-wrapper').on('touchstart',function(e){
-				console.log(iX)
-				startX = e.originalEvent.targetTouches[0].pageX;
-			});
-			$('.swiper-wrapper').on('touchmove',function(e){
-				var disX = e.originalEvent.targetTouches[0].pageX-startX;
-				console.log(iX)
-				objX = -iX*iW + disX;
-				$('.swiper-wrapper').css('left',objX);
-				// 禁止左右滑动翻页
-				event.preventDefault()
-
-			});
-			$('.swiper-wrapper').on('touchend',function(e){
-				iX = objX/iW;
-				iX = -Math.round(iX)
-				if(iX < 0){
-					iX = 0;
-				}else{
-
-				}
-				if(iX > $('.map_word').length-1){
-					iX = $('.map_word').length-1;
-				}
-				$('.swiper-wrapper').animate({'left':-iX*iW},500);
-				nowLongitude = longitude[Math.abs(iX)];
-		    	nowLatitude = latitude[Math.abs(iX)];
-		    	nowCity = city[Math.abs(iX)];
-		    	fn();
-			})
-		}
-
-
-
-	})
-
-
-
-
-
+			
+			function fnStart(e){
+				iStartTouchStartX = e.originalEvent.targetTouches[0].pageX;
+			};
+			function fnEnd(e){
+				 iStartTouchEndX = e.originalEvent.changedTouches[0].pageX;
+				 iStartX = iStartTouchEndX - iStartTouchStartX;
+				 console.log(iStartX);
+				 if(iStartX > 0){
+				 	index--;
+				 	if(index < 0){
+				 		index = 2;
+				 	};
+				 	nowLongitude = longitude[index];
+			        nowLatitude = latitude[index];
+			        nowCity = city[index];
+			        fn();
+				 }else if(iStartX < 0){
+				 	index++;
+				 	if(index > longitude.length-1){
+				 		index = 0;
+				 	};
+				 	nowLongitude = longitude[index];
+			        nowLatitude = latitude[index];
+			        nowCity = city[index];
+			        fn();
+				 }
+			}
+    	})
+    	
     </script>
 
 
-
+	
 </body>
 </html>

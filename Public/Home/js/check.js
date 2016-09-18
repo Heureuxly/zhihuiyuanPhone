@@ -148,10 +148,10 @@ function passwordCheckVerify(parent){
 }
 // 点击表单value为空
 function listnull(parent){
-	var street = parent.find('.text[name="street"]');
-	var begood = parent.find('.text[name="begood"]');
+	var street = parent.find('.text[name="dist"]');
+	var begood = parent.find('.text[name="field"]');
 	var video = parent.find('.text[name="video"]');
-	var area = parent.find('.city_t[name="city_t"]');
+	var area = parent.find('.city_t[name="city"]');
 
 	street.focus(function(){
 		if ($(this).val() == '社区街道：') {
@@ -335,7 +335,9 @@ function introCheckVerify(parent){
 		$(".value").hide();
 	});
 	parent.find('.intro[name="intro"]').blur(function(){
-		$(".value").show();
+		if ($(this).val() == '') {
+			$(".value").show();
+		}
 	});
 
 }

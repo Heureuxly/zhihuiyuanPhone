@@ -2,26 +2,26 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" name="viewport" />
+	 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
 	
 
 	<title>智慧源-首页</title>
-	<link rel="stylesheet" href="/zhihui/Public/Home/css/public.css">
-	<link rel="stylesheet" href="/zhihui/Public/Home/css/screen.css" >
+	<link rel="stylesheet" href="/zhihuiyuan(1)/Public/Home/css/public.css">
+	<link rel="stylesheet" href="/zhihuiyuan(1)/Public/Home/css/screen.css" >
 
 	<!--media="only screen and (max-device-width:760px) and (-webkit-min-device-pixel-ratio:2)"-->
 	<!--zhihuiyuan index for mobile-->
 
-	<link rel="stylesheet" href="/zhihui/Public/Home/css/font-awesome.css">
+	<link rel="stylesheet" href="/zhihuiyuan(1)/Public/Home/css/font-awesome.css">
 
-	<script src="/zhihui/Public/Home/js/jquery.js" type="text/javascript"></script>
-	<script src="/zhihui/Public/Home/js/index.js" type="text/javascript"></script>
+	<script src="/zhihuiyuan(1)/Public/Home/js/jquery.js" type="text/javascript"></script>
+	<script src="/zhihuiyuan(1)/Public/Home/js/index.js" type="text/javascript"></script>
 </head>
 <body>
 	<header>
 		<div class="button">
-			<img src="/zhihui/Public/Home/img/button.png" alt="">
+			<img src="/zhihuiyuan(1)/Public/Home/img/button.png" alt="">
 		</div>
 		<nav class="menu">
 			<ul class="menu_1">
@@ -31,10 +31,10 @@
 			<a href="index.html">
 		    <div class="top">
 			<div class="logo">
-				<img src="/zhihui/Public/Home/img/logo.png" alt="">
+				<img src="/zhihuiyuan(1)/Public/Home/img/logo.png" alt="">
 			</div>
 			<div class="word">
-				<img src="/zhihui/Public/Home/img/word.png" alt="">
+				<img src="/zhihuiyuan(1)/Public/Home/img/word.png" alt="">
 			</div>
 		    </div>
 	    	</a>
@@ -43,7 +43,7 @@
 	<main>
 	<section class="box">
 		<article>
-			<img src="/zhihui/Public/Home/img/pic-01.jpg" alt="">
+			<img src="/zhihuiyuan(1)/Public/Home/img/pic-01.jpg" alt="">
 		</article>
 	</section>
 	
@@ -56,14 +56,14 @@
 			
 			<ul>
 				<li>
-					<div class="box-one-pic"><a href="http://www.zady.cn/aqpt/login.jsp"><img src="/zhihui/Public/Home/img/两化融合图片_01.png" alt=""></a>
+					<div class="box-one-pic"><a href="http://www.zady.cn/aqpt/login.jsp"><img src="/zhihuiyuan(1)/Public/Home/img/两化融合图片_01.png" alt=""></a>
 					</div>
 					<div class="box-one-word">
-						<p><a href="/zhihui/Glod/index/id/1">CSR企业责任平台</a></p>
+						<p><a href="/zhihuiyuan(1)/Glod/index/id/1">CSR企业责任平台</a></p>
 					</div>
 				</li>
-				<?php if(is_array($content)): foreach($content as $key=>$v): ?><li><a href="/zhihui/Glod/index/id/<?php echo ($v["id"]); ?>">
-					<div class="box-one-pic"><img src="/zhihui/Public/uploads/<?php echo ($v["pic"]); ?>.png" alt="">
+				<?php if(is_array($content)): foreach($content as $key=>$v): ?><li><a href="/zhihuiyuan(1)/Glod/index/id/<?php echo ($v["id"]); ?>">
+					<div class="box-one-pic"><img src="/zhihuiyuan(1)/Public/uploads/<?php echo ($v["pic"]); ?>.png" alt="">
 					</div>
 					<div class="box-one-word">
 					<p><?php echo ($v["dataname"]); ?></p>
@@ -82,8 +82,8 @@
 		</div>
 		<article class="box-one-b">
 			<ul>
-				<?php if(is_array($content1)): foreach($content1 as $key=>$v): ?><li><a href="/zhihui/Glod/index/id/<?php echo ($v["id"]); ?>">
-					<div class="box-one-pic"><img src="/zhihui/Public/uploads/<?php echo ($v["pic"]); ?>.png" alt="">
+				<?php if(is_array($content1)): foreach($content1 as $key=>$v): ?><li><a href="/zhihuiyuan(1)/Glod/index/id/<?php echo ($v["id"]); ?>">
+					<div class="box-one-pic"><img src="/zhihuiyuan(1)/Public/uploads/<?php echo ($v["pic"]); ?>.png" alt="">
 					</div>
 					<div class="box-one-word">
 					<p><?php echo ($v["dataname"]); ?></p>
@@ -108,13 +108,13 @@
 				<span>联系客服</span>
 			</li>
 			</a>
-			<a href="/zhihui/Map/index">
+			<a href="/zhihuiyuan(1)/Map/index">
 			<li id="imgid2">
 				<i class="fa fa-map-marker fa-2x"></i>
 				<span>地图定位</span>
 			</li>
 			</a>
-			<a href="/zhihui/Login/index">
+			<a href="/zhihuiyuan(1)/Login/index">
 			<li id="imgid3">
 				<i class="fa fa-th-large fa-2x"></i>
 				<span>登陆注册</span>
